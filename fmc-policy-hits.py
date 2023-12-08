@@ -184,7 +184,10 @@ def main():
         print('2) Most Recent Hit Only')
         print('3) Zero Hits Only')
         selection = int(input(': '))
-
+        
+    #create the report output.  writing raw comma separated data seemed easier/lazier than using dict writer
+    #considering the nested tuple in the dictionary objects
+    
     #detailed report
     if selection == 1:
         with open('fmc-policy-hits.csv', 'w') as file:
